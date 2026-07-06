@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard Porsche</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <h1>PORSCHE</h1>
+        <p>Dashboard Comercial</p>
+
+    </div>
+
+</header>
+
+<section class="kpis">
+
+    <div class="card">
+
+        <h3>Total de Vendas</h3>
+
+        <span id="totalVendas">0</span>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Faturamento</h3>
+
+        <span id="faturamento">R$ 0</span>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Ticket Médio</h3>
+
+        <span id="ticketMedio">R$ 0</span>
+
+    </div>
+
+    <div class="card">
+
+        <h3>Cidades Atendidas</h3>
+
+        <span id="cidades">0</span>
+
+    </div>
+
+</section>
+
+
+<section class="perguntas">
+
+    <div class="titulo">
+
+        <h2>Perguntas de Negócio</h2>
+
+    </div>
+
+    <div class="question">
+
+        <h3>1. Qual cidade gerou o maior faturamento?</h3>
+
+        <canvas id="cidadeChart"></canvas>
+
+    </div>
+
+    <div class="question">
+
+        <h3>2. Quais modelos representam a maior parte das vendas?</h3>
+
+        <canvas id="modeloChart"></canvas>
+
+    </div>
+
+    <div class="question">
+
+        <h3>3. Como as vendas evoluíram durante o período?</h3>
+
+        <canvas id="tempoChart"></canvas>
+
+    </div>
+
+</section>
+
+
+<section class="extras">
+
+    <div class="grafico">
+
+        <h3>Forma de Pagamento</h3>
+
+        <canvas id="pagamentoChart"></canvas>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <p>
+
+        Dashboard desenvolvido em HTML, CSS e JavaScript |
+
+        Dados Porsche Sanitizados
+
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
