@@ -1,0 +1,253 @@
+/* ==========================
+   CONFIGURAÇÕES GERAIS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins', sans-serif;
+    background:#111111;
+    color:#ffffff;
+
+}
+
+/* ==========================
+        HEADER
+========================== */
+
+header{
+
+    width:100%;
+    background:#000;
+    padding:30px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-bottom:3px solid #D5001C;
+
+}
+
+.logo h1{
+
+    font-size:40px;
+    letter-spacing:5px;
+    text-align:center;
+
+}
+
+.logo p{
+
+    text-align:center;
+    color:#bdbdbd;
+    margin-top:8px;
+
+}
+
+/* ==========================
+        KPIs
+========================== */
+
+.kpis{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    padding:40px;
+
+}
+
+.card{
+
+    background:#1b1b1b;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.45);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    border-left:5px solid #D5001C;
+
+}
+
+.card h3{
+
+    color:#bdbdbd;
+
+    font-size:16px;
+
+    margin-bottom:15px;
+
+}
+
+.card span{
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+
+/* ==========================
+    TÍTULO
+========================== */
+
+.titulo{
+
+    margin:20px 40px;
+
+}
+
+.titulo h2{
+
+    font-size:28px;
+
+    color:white;
+
+}
+
+/* ==========================
+    PERGUNTAS
+========================== */
+
+.perguntas{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+    padding:0 40px 40px;
+
+}
+
+.question{
+
+    background:#1b1b1b;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.question h3{
+
+    margin-bottom:20px;
+
+    color:#f5f5f5;
+
+}
+
+/* ==========================
+    GRÁFICO EXTRA
+========================== */
+
+.extras{
+
+    padding:0 40px 40px;
+
+}
+
+.grafico{
+
+    background:#1b1b1b;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.4);
+
+}
+
+.grafico h3{
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+    CANVAS
+========================== */
+
+canvas{
+
+    width:100%!important;
+
+    height:420px!important;
+
+}
+
+/* ==========================
+    FOOTER
+========================== */
+
+footer{
+
+    background:#000;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#bdbdbd;
+
+    border-top:3px solid #D5001C;
+
+}
+
+/* ==========================
+    RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+.logo h1{
+
+    font-size:28px;
+
+}
+
+.card span{
+
+    font-size:28px;
+
+}
+
+canvas{
+
+    height:300px!important;
+
+}
+
+.kpis,
+.perguntas,
+.extras{
+
+    padding:20px;
+
+}
+
+}
